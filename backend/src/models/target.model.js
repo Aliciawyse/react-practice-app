@@ -8,6 +8,7 @@ require('mongoose-type-email');
 module.exports = function (app) {
 
   const mongooseClient = app.get('mongooseClient');
+
   const target = new mongooseClient.Schema({
 
     name: {
